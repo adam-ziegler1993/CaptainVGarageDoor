@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capt. V's Garage Door Repair & Maintenance</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS for styling and responsiveness -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    
+</head>
+<body>
+
+    <!-- Header Section -->
+    <section class="header-container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo-capt-v.png" alt="Logo" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="quote-btn" href="contact.html">Get a Free Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    
+    <!-- Hero Section -->
+    <section class="hero-image">
+        <img src="./images/contact-hero.png" alt="Garage Door" class="hero-img">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h1>Contact</h1>
+            <p>Call today or fill out the form for a free estimate.</p>  
+            <a href="contact.html" class="cta-button">Get in Contact</a>
+            <a href="services.html" class="cta-button problems-button">Common Problems</a>
+        </div>
+        <a href="#contact-section"><i class="fas fa-arrow-down scroll-down-arrow"></i></a>
+    </section>
+<!-- Contact Section -->
+<section id="contact-section">
+    <div class="contact-details">
+        <h2>Contact Details</h2>
+        <p>Montgomery County, Texas</p>
+        <p>(936) 499-1072</p>
+        <p><a href="mailto:cristian.villman@gmail.com">cristian.villman@gmail.com</a></p>
+    </div>
+    <div class="contact-form">
+        <h2>Get a Free Estimate</h2>
+        <form name="contact" method="POST" netlify data-netlify-honeypot="bot-field">
+            <!-- Honeypot field for spam filtering, hidden from users -->
+            <input name="bot-field" type="text" style="display:none;">
+        
+            <input type="hidden" name="captv-free-estimate" value="contact" />
+            
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter your phone number">
+            </div>
+        
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="3" placeholder="Describe your issue or service required"></textarea>
+            </div>
+        
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        
+    </div>
+</section>
+
+<!-- Google Map Section -->
+<section id="google-map">
+    <div class="container">
+        <h2>Serving the Montgomery County, Texas area.</h2>
+        <div class="roww">
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.258152489072!2d-95.69683748489053!3d30.162347581837467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86473c5d7b1135d7%3A0x35bb8fb2f6b3a1f1!2sMontgomery%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1612345678901!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        
+    </div>
+</section>
+        <!-- CTA Section -->
+        <section id="cta-section">
+            <div class="cta-content">
+                <h2>Need Your Garage Door Fixed?</h2>
+                <p>Whether you need a <a href="./service-pages/spring-replacement.html">Spring</a> or <a href="./service-pages/cable-replacement.html">Cable Replacement</a>, <a href="./service-pages/track-adjustment.html">Track Adjustment</a>, or garage door <a href="./service-pages/opener-repair.html">Opener Repair</a>, Capt V Garage Door Repair & Maintenance has you covered.</p>
+                <p>Let's get it fixed ASAP! Use the button below to get in contact.</p>
+                <a href="./contact.html" class="cta-button">Get a Free Estimate</a>
+            </div>
+        </section>
+        
+    
+        <!-- Footer Section -->
+        <section class="footer-container">
+            <div>
+                <!-- Logo -->
+                <a href="./index.html"><img src="./images/logo-capt-v.png" alt="Logo" class="footer-logo"></a>
+            </div>
+            <div class="footer-links">
+                <!-- Footer navigation links -->
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-form">
+                <!-- Contact form headline -->
+                <h2>Send a Message</h2>
+                <!-- Contact form -->
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <!-- Honeypot field for spam filtering, hidden from users -->
+                    <input name="bot-field" type="text" style="display:none;">
+                    
+                    <!-- Regular fields for user input -->
+                    <input type="text" name="name" placeholder="Name" required><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <input type="tel" name="phone" placeholder="Phone"><br>
+                    <textarea name="message" placeholder="Message"></textarea><br>
+                    
+                    <!-- Submit button -->
+                    <button type="submit">Send</button>
+                </form>
+            <!-- Facebook Social Media Icon -->
+            <a href="https://www.facebook.com/profile.php?id=61551576044021" target="_blank">
+                <i class="fab fa-facebook-f social-icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Link to index Javascript file -->
+    <script src="index.js"></script>
+
+    <!-- Bootstrap JS for responsive navbar -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
