@@ -107,11 +107,17 @@
             <!-- Contact form headline -->
             <h2>Send a Message</h2>
             <!-- Contact form -->
-            <form>
-                <input type="text" placeholder="Name" required><br>
-                <input type="email" placeholder="Email" required><br>
-                <input type="tel" placeholder="Phone"><br>
-                <textarea placeholder="Message"></textarea><br>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <!-- Honeypot field for spam filtering, hidden from users -->
+                <input name="bot-field" type="text" style="display:none;">
+                
+                <!-- Regular fields for user input -->
+                <input type="text" name="name" placeholder="Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="tel" name="phone" placeholder="Phone"><br>
+                <textarea name="message" placeholder="Message"></textarea><br>
+                
+                <!-- Submit button -->
                 <button type="submit">Send</button>
             </form>
             <!-- Facebook Social Media Icon -->
